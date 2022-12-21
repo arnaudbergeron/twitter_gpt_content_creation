@@ -1,2 +1,3 @@
-.api_tokens.env
-.test_tweet.ipynb
+.env
+
+test_tweet.ipynb
