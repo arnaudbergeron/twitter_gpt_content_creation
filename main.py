@@ -7,8 +7,4 @@ import json
 import openai
 import random
 
-
-
-openai.api_key = os.environ.get("open_ai_secret")
-
 main()
