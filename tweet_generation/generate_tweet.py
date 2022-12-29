@@ -43,5 +43,4 @@ def generate_astrolgy_tweet():
     print(tweet_response)
 
 def main():
-    openai.api_key = os.environ.get("open_ai_secret")
     generate_astrolgy_tweet()
