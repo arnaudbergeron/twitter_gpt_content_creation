@@ -6,6 +6,10 @@ from requests_oauthlib import OAuth1Session
 import json
 import openai
 import random
+from apscheduler.schedulers.blocking import BlockingScheduler
 load_dotenv()
 
-main()
+
+scheduler = BlockingScheduler()
+scheduler.add_job(main, 'interval', seconds=20)
+scheduler.start()
