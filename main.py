@@ -6,5 +6,6 @@ from requests_oauthlib import OAuth1Session
 import json
 import openai
 import random
+load_dotenv()
 
 main()
