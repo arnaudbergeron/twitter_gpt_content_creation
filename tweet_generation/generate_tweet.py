@@ -40,7 +40,7 @@ def generate_astrolgy_tweet():
     
     twitter_client = initialize_client_astrology()
     tweet_response = twitter_client.create_tweet(text=tweet_content)
-    print(tweet_response)
+    print("Successfully tweeted")
 
 def main():
     openai.api_key = os.environ.get("open_ai_secret")
