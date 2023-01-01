@@ -11,5 +11,5 @@ load_dotenv()
 
 
 scheduler = BlockingScheduler()
-scheduler.add_job(main, 'interval', minutes=30)
+scheduler.add_job(main, 'interval', minutes=60)
 scheduler.start()
