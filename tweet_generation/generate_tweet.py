@@ -54,7 +54,7 @@ def generate_astrolgy_hourly_tweet():
     print("Successfully tweeted")
 
 def generate_astrology_horoscope(thread_queries):
-    _thread = ["✨ Daily Horoscope ✨\n"+datetime.date.today().strftime("%d/%m/%Y")+"\nTake a look at what the stars have in mind for you today"]
+    _thread = ["🪬 Daily Horoscope 🪬\n"+datetime.date.today().strftime("%d/%m/%Y")+"\nTake a look at what the stars have in mind for you today"]
     for query in thread_queries:
         time.sleep(2)
         _thread.append(generate_gpt_response(query))
