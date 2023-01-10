@@ -58,6 +58,7 @@ def generate_astrology_horoscope(thread_queries):
     for query in thread_queries:
         time.sleep(2)
         _thread.append(generate_gpt_response(query))
+    _thread.append("My name is Luna, I'm a Pisces and I create Daily Horoscopes, Follow to see what the stars have in mind for you tommorow 😘")
     return _thread
 
 def hourly_tweet():
