@@ -11,6 +11,6 @@ load_dotenv()
 
 openai.api_key = os.environ.get("open_ai_secret")
 scheduler = BlockingScheduler()
-scheduler.add_job(hourly_tweet, 'interval', minutes=120)
+#scheduler.add_job(hourly_tweet, 'interval', minutes=120)
 scheduler.add_job(daily_tweet, 'cron', hour=7)
 scheduler.start()
